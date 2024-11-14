@@ -19,6 +19,7 @@ public class Cheers {
     
             while (i < nameLength) {
                 char letter = name.charAt(i);
+                letter = Character.toUpperCase(letter); 
                 if (useAn) {
                     System.out.println("Give me an " + letter + ": " + letter + "!");
                 } else {
@@ -29,7 +30,7 @@ public class Cheers {
     
             System.out.println("What does that spell?"); 
             while (y < numerOfTimes) {  
-                System.out.println(name + "!!!");
+                System.out.println(name.toUpperCase() + "!!!"); 
                 y++;
             }
         }
