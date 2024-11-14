@@ -19,10 +19,10 @@ public class TestRandom {
         if (secondOption != 0 || firstOption != 0) {
             ratio = (double) firstOption / secondOption;
         } else {
-            ratio = 0; 
+            ratio = 0.0; 
         }
 
-        if (ratio == 0) {
+        if (ratio == 0.0) {
             System.out.println("> 0.5: " + firstOption + " times");
 			System.out.println("<= 0.5: " + secondOption + " times");
         } else {
