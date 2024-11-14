@@ -23,9 +23,13 @@ public class TestRandom {
         }
 
         if (ratio == 0) {
-            System.out.println("> 0.5: " + firstOption + " times, <= 0.5: " + secondOption);
+            System.out.println("> 0.5: " + firstOption + " times");
+			System.out.println("<= 0.5: " + secondOption + " times");
         } else {
-            System.out.println("> 0.5: " + firstOption + " times, <= 0.5: " + secondOption + " times, ratio: " + ratio);
+            System.out.println("> 0.5: " + firstOption + " times");
+			System.out.println("<= 0.5: " + secondOption + " times");
+			System.out.println("ratio: " + ratio);
         }
-    }
+        }
+    
 }
