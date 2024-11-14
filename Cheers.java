@@ -10,6 +10,7 @@ public class Cheers {
     
             while (i < nameLength) {
                 char letter = name.charAt(i);
+                letter = Character.toUpperCase(letter); 
                 boolean useAn = false;
     
                 for (char c : charsToFind) {
@@ -22,7 +23,7 @@ public class Cheers {
                 if (useAn) {
                     System.out.println("Give me an " + letter + ": " + letter + "!");
                 } else {
-                    System.out.println("Give me a " + letter + ": " + letter + "!");
+                    System.out.println("Give me a  " + letter + ": " + letter + "!"); 
                 }
                 i++;
             }
