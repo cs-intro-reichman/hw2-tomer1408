@@ -5,7 +5,7 @@ public class Collatz {
         int seed = Integer.parseInt(args[0]);
 		String VorC = args[1];
 		char letter = VorC.charAt(0);
-		if(letter == 'V'){
+		if(letter == 'V' || letter == 'v'){
 			for (int i = 1; i <= seed; i++) {
 				int number = i;
 				int steps = 0;
