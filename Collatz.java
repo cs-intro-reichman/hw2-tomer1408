@@ -3,7 +3,7 @@ public class Collatz {
         int seed = Integer.parseInt(args[0]);
         String VorC = args[1];
         char letter = VorC.charAt(0);
-        
+
         if (letter == 'V' || letter == 'v') {
             for (int i = 1; i <= seed; i++) {
                 int number = i;
@@ -11,7 +11,7 @@ public class Collatz {
 
                 System.out.print(number);
 
-                while (number != 1) {
+                do {
                     if (number % 2 == 0) {
                         number = number / 2;
                     } else {
@@ -19,7 +19,7 @@ public class Collatz {
                     }
                     System.out.print(" " + number);
                     steps++;
-                }
+                } while (number != 1);
 
                 steps++; 
                 System.out.println(" (" + steps + ")");
